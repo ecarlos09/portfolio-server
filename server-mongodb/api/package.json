@@ -10,6 +10,12 @@
     "unitTests": "jest --testPathPattern=/unit/ --watchAll --verbose",
     "coverage": "jest --testPathPattern=/unit/ --coverage"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+        "/node_modules/"
+    ]
+  },
   "author": "Elwin Carlos",
   "license": "ISC",
   "devDependencies": {
