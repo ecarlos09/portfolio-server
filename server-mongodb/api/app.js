@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const projectRoutes = require('./controllers/projects')
+const projectRoutes = require('./routes/projects')
 app.use('/projects', projectRoutes)
 
 // Root route
