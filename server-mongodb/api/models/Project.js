@@ -14,7 +14,7 @@ class Project {
         return new Promise (async (resolve, reject) => {
             try {
                 const db = await init()
-                const projectsData = await db.collection('projects').find().toArray()
+                const projectsData = await db.collection('repos').find().toArray()
                 const projects = projectsData.map(p => new Project({ ...p, id: p._id }))
                 resolve(projects);
             } catch (err) {
