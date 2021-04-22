@@ -1,6 +1,6 @@
 version: '3'
 services:
-  server:
+  api:
     image: node:14.15.5
     working_dir: /code
     ports: 
